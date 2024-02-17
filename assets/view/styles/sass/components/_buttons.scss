@@ -1,0 +1,21 @@
+ 
+ .navButton {  
+
+    width:227.5px;
+    height: 40px;
+    margin: 5px;
+    background-color: var(--Shadowed-Steel);
+
+    &:hover {
+        background-color: var(--hard-Coral);
+    }
+ 
+    & .buttonNvIcon {
+        width: 25px;
+        height:25px;
+    }
+
+
+ } 
+
+

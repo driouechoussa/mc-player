@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+    margin: 0; padding: 0;
+    border: none; outline: none;
+    font-family: var(--body-Font);
+    user-select: none;
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: var(--gray);
+}
+
+
+button {
+    font-size: var(--Normal-Font-Size);
+    font-weight:var(--font-medium) ;
+    border-radius: var(--rd-buttons);
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: .4s;
+}
+
+h1 {
+    font-size: var(--Larger-Font-Size);
+    font-weight: var(--font-medium);
+    
+}
+
+h3 , h4 , h5 {
+    font-size: var(--Big-Font-Size);
+    text-transform: capitalize;
+    font-weight: var(--font-semibold); 
+}
+
+p {
+    font-size: var(--Normal-Font-Size);
+    font-weight: var(--font-regular);
+}
