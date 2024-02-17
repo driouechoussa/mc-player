@@ -6,35 +6,34 @@
     }
 
     :root {
-        /*------------ Colors -----------*/
-        /*Primary*/
-        --Watermelonade: #ec4a52;
-        --Black-Liquorice: rgb(59, 59, 59); /*black*/
-        --Shadowed-Steel: rgb(74, 74, 74); /*light black*/
+        //------------ Colors -----------
+        //Primary
+        --Watermelonade: rgb(236, 74, 82);
+        --Black-Liquorice: rgb(59, 59, 59); //black
+        --Shadowed-Steel: rgb(74, 74, 74); //light black
+        
+        //Other Colors
+        --AliceBlue: rgb(240, 248, 255);
+        --gray: rgb(226, 226, 226); //light gray
         --hard-Coral: rgb(100, 100, 100); //for button hovering
         
-        /*Other Color*/
-        --AliceBlue: rgb(240, 248, 255);
-        --gray: rgb(226, 226, 226); /*light gray*/
-        
-        /*------------Font and typography-----------*/
-        /*premary Font*/
+        //------------Font and typography-----------
+        //Font
         --body-Font: 'inter';
         
-        /*typography*/
-        --Larger-Font-Size: 30px; /*heading*/
+        //typography
+        --Larger-Font-Size: 30px; //heading
         --Big-Font-Size: 250.0%;
-        --Normal-Font-Size: 218.75%; /* for p */
-        --Small-Font-Size: 156.25%; /*for a*/
+        --Normal-Font-Size: 218.75%; //for paraghraph
+        --Small-Font-Size: 156.25%; //for links
         
-        /*Font weight */
+        //Font weight
         --font-regular :400;
-        --font-medium:500; /*for a */
+        --font-medium:500;
         --font-semibold:600;
         --font-bold: 700;
-        
-        /*Borders*/
-        --input-Border: 2px solid var(--Black-Glaze);
+
+        //Shapes feather
         --rd-buttons: 5px;
         --rd-Frames:20px;
         }
