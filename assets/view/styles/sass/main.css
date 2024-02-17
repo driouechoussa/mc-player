@@ -46,30 +46,21 @@ p {
   src: url("../font/Inter/Inter-Regular.ttf");
 }
 :root {
-  /*------------ Colors -----------*/
-  /*Primary*/
-  --Watermelonade: #ec4a52;
-  --Black-Liquorice: rgb(59, 59, 59); /*black*/
-  --Shadowed-Steel: rgb(74, 74, 74); /*light black*/
-  --hard-Coral: rgb(100, 100, 100);
-  /*Other Color*/
+  --Watermelonade: rgb(236, 74, 82);
+  --Black-Liquorice: rgb(59, 59, 59);
+  --Shadowed-Steel: rgb(74, 74, 74);
   --AliceBlue: rgb(240, 248, 255);
-  --gray: rgb(226, 226, 226); /*light gray*/
-  /*------------Font and typography-----------*/
-  /*premary Font*/
+  --gray: rgb(226, 226, 226);
+  --hard-Coral: rgb(100, 100, 100);
   --body-Font: "inter";
-  /*typography*/
-  --Larger-Font-Size: 30px; /*heading*/
+  --Larger-Font-Size: 30px;
   --Big-Font-Size: 250.0%;
-  --Normal-Font-Size: 218.75%; /* for p */
-  --Small-Font-Size: 156.25%; /*for a*/
-  /*Font weight */
+  --Normal-Font-Size: 218.75%;
+  --Small-Font-Size: 156.25%;
   --font-regular:400;
-  --font-medium:500; /*for a */
+  --font-medium:500;
   --font-semibold:600;
   --font-bold: 700;
-  /*Borders*/
-  --input-Border: 2px solid var(--Black-Glaze);
   --rd-buttons: 5px;
   --rd-Frames:20px;
 }
