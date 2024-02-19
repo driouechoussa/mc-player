@@ -116,4 +116,14 @@ p {
   height: 55px;
   background-color: var(--Black-Liquorice);
   border-top-right-radius: inherit;
+}
+.countainer .listMcBlock .screen-Displaying {
+  width: 100%;
+  height: 380px;
+}
+.countainer .listMcBlock .audio-controler {
+  width: 100%;
+  height: 65px;
+  background-color: var(--Black-Liquorice);
+  border-bottom-right-radius: inherit;
 }/*# sourceMappingURL=main.css.map */
