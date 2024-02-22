@@ -37,3 +37,8 @@ p {
     font-size: var(--Normal-Font-Size);
     font-weight: var(--font-regular);
 }
+
+
+input[type="file"] {
+    display: none;
+}

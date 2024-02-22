@@ -40,6 +40,10 @@ p {
   font-weight: var(--font-regular);
 }
 
+input[type=file] {
+  display: none;
+}
+
 @font-face {
   font-family: "inter";
   src: url("../font/Inter/Inter-Bold.ttf");
