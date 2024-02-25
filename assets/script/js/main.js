@@ -5,6 +5,9 @@ var NavButtons = document.querySelectorAll('.navButton');
 //call the div square that will be countain the message when the directory not found
 var DisplaySquare = document.getElementById('screen-Displaying');
 
+//directory name
+var directoryName = undefined;
+
 console.log(LayoutsVisibility());
 
 function LayoutsVisibility() {
@@ -14,7 +17,7 @@ function LayoutsVisibility() {
                 ShowMessagesBox();
             }
             if (btnIndex.indexOf(e) == 1) {
-                setTimeout(() => browseAudioFiles(), 1000);
+                setTimeout(() => browseAudioFiles(), 500);
             }
             if (btnIndex.indexOf(e) == 2) {
                 
@@ -35,14 +38,27 @@ function LayoutsVisibility() {
 
 
 function browseAudioFiles() {
-    document.getElementById('fileHolder').click();
-
+  var browseFilesButton =  document.getElementById('fileHolder');
+  browseFilesButton.click();
+ 
+  
+  browseFilesButton.addEventListener("input", () => {
+    if (browseFilesButton.files.length == 0) {
+        alert('this directory is empty');
+    }
+    else{
+    var fullPath =  browseFilesButton.files[0].webkitRelativePath
+    directoryName = fullPath.split('/')[0];
+    console.log(directoryName);
+    }
+  });
+          
 }
 
 
 function ShowMessagesBox() {
 
-    var MessageBox_drcNotFound = document.createElement('div');
+    const MessageBox_drcNotFound = document.createElement('div');
     MessageBox_drcNotFound.setAttribute('id','MesssageBox-DrcNotFound');
 
 
