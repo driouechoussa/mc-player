@@ -8,6 +8,9 @@ var DisplaySquare = document.getElementById('screen-Displaying');
 //directory name
 var directoryName = undefined;
 
+//directories
+const Directories = [];
+
 console.log(LayoutsVisibility());
 
 function LayoutsVisibility() {
@@ -43,17 +46,23 @@ function browseAudioFiles() {
  
   
   browseFilesButton.addEventListener("input", () => {
-    if (browseFilesButton.files.length == 0) {
-        alert('this directory is empty');
-    }
-    else{
+    
     var fullPath =  browseFilesButton.files[0].webkitRelativePath
     directoryName = fullPath.split('/')[0];
-    console.log(directoryName);
-    }
-  });
-          
+
+    let drcName_Inputer = prompt("do you want to save this directory with name :", directoryName);
+     if (drcName_Inputer) {
+        
+     }
+  });          
 }
+
+
+/*function CreateNewDirectory() {
+    var directoryFolder = document.createElement('div');
+    directoryFolder.setAttribute('class','Drc-Folder');
+
+}*/
 
 
 function ShowMessagesBox() {
@@ -83,4 +92,6 @@ function ShowMessagesBox() {
     MessageBox_drcNotFound.appendChild(MessageBox_text);
     
 }
+
+
 
