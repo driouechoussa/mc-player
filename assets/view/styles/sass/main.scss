@@ -3,3 +3,5 @@
 @use 'config/variables';
 @use 'components/buttons'; 
 @use 'layout/countainer';
+@use 'layout/MessageBox' as MessageBox;
+@use 'layout/DisplayBox' as DisplayBox;
